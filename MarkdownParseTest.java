@@ -34,7 +34,7 @@ public void testgetLinks3() throws IOException {
 
     Path file = Path.of("test-file3.md");
     String content = Files.readString(file);
-    assertEquals(MarkdownParse.getLinks(content), List.of(""));
+    assertEquals(MarkdownParse.getLinks(content), List.of());
 
 }
 
@@ -70,7 +70,7 @@ public void testgetLinks7() throws IOException {
 
     Path file = Path.of("test-file7.md");
     String content = Files.readString(file);
-    assertEquals(MarkdownParse.getLinks(content), List.of(""));
+    assertEquals(MarkdownParse.getLinks(content), List.of());
 
 }
 
