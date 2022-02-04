@@ -61,7 +61,7 @@ public void testgetLinks6() throws IOException {
 
     Path file = Path.of("test-file6.md");
     String content = Files.readString(file);
-    assertEquals(MarkdownParse.getLinks(content), List.of("page"));
+    assertEquals(MarkdownParse.getLinks(content), List.of("page.com"));
 
 }
 
