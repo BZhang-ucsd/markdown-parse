@@ -8,7 +8,7 @@ import java.util.List;
 
 
 public class MarkdownParseTest{
-     /** @Test
+     @Test
     public void Snippet1Test() throws IOException {
         ArrayList<String> str = new ArrayList<String>();
         str.add("`google.com");
@@ -16,7 +16,7 @@ public class MarkdownParseTest{
         str.add("ucsd.edu");
         String file=Files.readString(Path.of("Snippet1.md"));
         assertEquals(str,MarkdownParse.getLinks(file));
-    } */
+    } 
 
     //@Test
     //public void Snippet2Test() throws IOException {
