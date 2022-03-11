@@ -8,12 +8,37 @@ import java.util.List;
 
 
 public class MarkdownParseTest{
-    @Test
-    public void addition() {
-        assertEquals(2, 1 + 1);
-    }
+     /** @Test
+    public void Snippet1Test() throws IOException {
+        ArrayList<String> str = new ArrayList<String>();
+        str.add("`google.com");
+        str.add("google.com");
+        str.add("ucsd.edu");
+        String file=Files.readString(Path.of("Snippet1.md"));
+        assertEquals(str,MarkdownParse.getLinks(file));
+    } */
+
+    //@Test
+    //public void Snippet2Test() throws IOException {
+    //    ArrayList<String> str = new ArrayList<String>();
+    //    str.add("a.com");
+    //   str.add("a.com(())");
+    //    str.add("example.com");
+    //    String file=Files.readString(Path.of("Snippet2.md"));
+    //    assertEquals(str,MarkdownParse.getLinks(file));
+    //}
 
     @Test
+    public void Snippet3Test() throws IOException {
+        ArrayList<String> str = new ArrayList<String>();
+        str.add("https://www.twitter.com");
+        str.add("https://ucsd-cse15l-w22.github.io/");
+        str.add("https://cse.ucsd.edu/");
+        String file=Files.readString(Path.of("Snippet3.md"));
+        assertEquals(str,MarkdownParse.getLinks(file));
+    }
+
+    /** @Test
     public void testGetLinks1() throws IOException{
         String file=Files.readString(Path.of("test-file.md"));
         assertEquals(MarkdownParse.getLinks(file), List.of("https://something.com","some-page.html"));
