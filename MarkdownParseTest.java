@@ -28,7 +28,7 @@ public class MarkdownParseTest{
     //    assertEquals(str,MarkdownParse.getLinks(file));
     //}
 
-    @Test
+   /** @Test
     public void Snippet3Test() throws IOException {
         ArrayList<String> str = new ArrayList<String>();
         str.add("https://www.twitter.com");
