@@ -28,7 +28,6 @@ public class MarkdownParse {
             if(nextOpenBracket==0){
                 toReturn.add(markdown.substring(openParen + 1, closeParen));
                 currentIndex = closeParen + 1;
-                System.out.println(currentIndex);
             }
             else{
                 if(markdown.charAt(nextOpenBracket-1)==ImageIndicator){
